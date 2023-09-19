@@ -46,7 +46,7 @@ background-repeat:no-repeat;background-size:cover;overflow:auto;background-color
 
  @keyframes modalSlideUp0{from {transform:translateX(-1500px)}}
  
- @keyframes modalSlideUp1{from {transform:translateY(-1500px)}}
+ @keyframes modalSlideUp1{from {transform:translateY(1500px)}}
  
  @keyframes modalSlideUp2{from {transform:translateX(1500px)}}
 
