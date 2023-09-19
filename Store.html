@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ERP</title>
+	
+
+
+	<link rel="icon" href="icons/anubis.png" /> <!--to put imge for site-->
+	<link rel="stylesheet" href="css/cssmain.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,500;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	
+
+	<script src="js/mainjs.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+
+   <style>
+   
+
+	 h3{font-weight:300;font-size:1.3rem;}
+	 
+	 
+	 .same{background-color:black;display:inline-block;width:24%;height:50px;padding:0;margin:0;border:1px solid #FFD523;box-shadow: 0px -15px 10px -21px #FFD523,-15px 0px 10px -21px #FFD523,15px 0px 10px -21px #FFD523, 0px 15px 10px -21px #FFD523}
+	 
+	 .test{background-color:#151515;color:white;width:80%;margin:-10px 0 0 0;padding:5px 0;border:1px solid #FFD523;transition:0.6s;box-shadow: 0px -15px 10px -21px #FFD523,-15px 0px 10px -21px #FFD523,15px 0px 10px -21px #FFD523, 0px 15px 10px -21px #FFD523}
+
+
+	 .test:hover{cursor:pointer;transform:scale(1.05)}
+
+     .test:active{background-color:#FFD523;color:black}
+	   
+	  #rightdiv::-webkit-Scrollbar{width:5px;background-color:#2e2e2e}
+      #rightdiv::webkit-Scrollbar-track{background-color:white}
+      #rightdiv::-webkit-Scrollbar-thumb{background-color:#ffffff1c;border-radius:20px}
+	 
+	  form > div{margin-top:30px;margin-bottom:20px}
+	  form input{width:30%;border-radius:10px;padding:8px;border:1px solid #FFD523;background-color:#ffffff1c;color:white;font-size:1rem;box-shadow: 0px 10px 10px -15px #FFD523;}
+	  form >input:focus{box-shadow:none !important}
+	  form > label {text-transform: capitalize;}
+	  
+	  #submitt input{margin-top:40px;background-color:#FFD523;width:120px;color:black;font-size:1rem;}
+
+
+	</style>	
+ </head>
+		
+  <body onload="preload()">
+	 <header id="header-section">
+
+        <center>
+			<div id="background"> 
+			
+			    <img src="icons/owl-90.png">
+
+			 </div> <!--background-->
+		</center>
+	
+	</header> 
+				
+				
+				
+								
+		<section id="store" >
+		            <div id="cpntainer">
+						<div id="leftFxd-Div">
+							<center>           
+							   <div id="container-nav">
+									  <div id="content">
+											
+											<div class="transform">
+												 <a href="index.html"><h2>Title</h2></a>
+											</div>
+											
+											<div id="all-links">
+												<a class="link" id="color1" onclick="ckickDef()">Definitions &nbsp;<i class="fa fa-edit"></i></a>
+											</div>
+											
+											<div id="all-links">
+												<a  class="link" id="color2" onclick="ckickRep()">Reports &nbsp; &nbsp;<i  class="fa fa-bar-chart" aria-hidden="true"></i></a>
+											</div>
+											
+											<div id="all-links">
+												<a class="link" id="color3" onclick="">Example3 &nbsp; <i class="fa fa-pencil"></i></a>
+											</div>
+											
+											<div id="all-links">
+												<a class="link" id="color4" onclick="">Example4 &nbsp; <i class="fa fa-pencil"></i></a>
+											</div>
+									
+									  </div><!--content-->
+									</div><!--container-nav-->
+							</center>
+						</div><!--leftFxd-Div-->
+						
+						
+						
+						<div id="rightFxd-Div" style="top:0; bottom:0; right:0; float:right; width:70%; background-color:#151515;z-index:999;margin:0; padding:0;display:inline-block;border-radius:10px 0 0 10px;box-shadow:0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;animation-name:modalSlideUp4 ;animation-duration:2.5s">
+							<center>           
+							   <div id="container-rightdiv" style="width:100%; background-color:;margin:0;padding:0">
+									  <div id="content1" style="padding:0 0 60px ; width:80%; background-color:">
+											
+											<div class="transform" style="background-color:#ffffff1c;border-radius:10px;width:160px;transition:0.5s">
+												<h2 style="padding:10px;color:#FFD523;cursor:pointer;letter-spacing:0.1rem">Definitions</h2>
+											</div>
+											
+											<div id="movment-content" style="width:100%;margin:0; padding:0;background-color:; display:inline-block;">
+
+												<div  id="start" style="display:flex; justify-content:space-between;margin-bottom:25px">
+														 
+												    <div class="same"> 
+															<div class="test" onclick="openform()">
+															   <h3 id="line">Add Item</h3>
+															</div>
+              										</div>
+
+												  <div class="same">
+												    <div class="test">
+													   <h3>Cashing Item</h3>
+													</div>
+												  </div>
+												</div>
+												
+												
+												
+												<div id="center" style="display:flex; justify-content:center;margin-bottom:25px">
+												  <div class="same">
+												    <div class="test">
+													   <h3>Identify Item </h3>
+													</div>
+												  </div>  
+												</div>
+												
+												
+												
+												<div id="end" style="display:flex; justify-content:space-between">
+												
+												<div class="same">
+												    <div class="test">
+													   <h3>Example</h3>
+													</div>
+												    </div>
+
+												    <div class="same">
+												    <div class="test">
+													   <h3>Reflux</h3>
+													</div>
+												  </div> 
+												</div>
+												
+											</div> <!--movment-content-->
+									  </div><!--content1-->
+									  
+									  
+									  <div id="content2" style="padding:0 0 60px ; width:80%; background-color:;display:none">
+											
+											<div class="transform" style="background-color:#ffffff1c;border-radius:10px;width:150px;transition:0.5s">
+												<h2 style="padding:10px;color:#FFD523;cursor:pointer;letter-spacing:0.1rem">Reports</h2>
+											</div>
+											
+											<div id="movment-content" style="width:100%;margin:0; padding:70px 0;background-color:; display:inline-block">
+
+												<div  id="start" style="display:flex;justify-content:space-around">
+												  <div class="same">
+												    <div class="test" onclick="openform()">
+													   <h3 id="line">Item Code</h3>
+													</div>
+												  </div>
+
+												  <div class="same">
+												    <div class="test">
+													   <h3>Balance Item</h3>
+													</div>
+												  </div>
+												</div
+											</div> <!--movment-content-->
+									  </div><!--content2-->
+									</div><!--container-nav-->
+							</center>
+						</div><!---->	
+						</div><!--leftFxd-Div-->	
+                    </div> <!--container-->						
+				<section>			
+				
+				
+			 <footer id="fotPage">
+				<p>Powered By&nbsp;<span>Hager</span></p>
+			 </footer>	
+			 
+			 
+<div id="modal">
+  
+  
+    <div id="contentt" style="background-color:#2e2e2e; width:70%; ;height:55%;min-height:50%;max-height:70%;padding:0;margin:15vh auto;border-bottom:8px solid #FFD523;border-radius:20px;animation-name:modalSlideUp;animation-duration:1s;">
+	
+	
+		  <div id="header"style="width:100%;margin:0;padding:0;background-color:#151515;display:inline-block">
+		        <span class="close" onclick="closeform()" style="font-size:1rem;color:#FFD523;float:right;cursor:pointer;margin:0;padding:3px">&#10006;</span>
+			<center>	<img src="icons/anubis.png" style="width:50px;height:50px;margin:-55px 0 0 0;padding:0"/> </center>
+			
+		  </div>
+		  
+		  <div id="body"  style="margin:0;padding:0;display:inline-block;width:100%;height:80%">
+		   <center> 
+		       <div  id="title" style="margin:0 0 30px 0;padding:0;background-color:#ffffff2e; width:220px;border-radius:0 0 30px 30px"><h1 style="margin:0;padding:5px 2px;font-weight:300 ;color:white;text-transform:capitalize;">form title </h1></div></center>
+		
+						<div  id="leftdiv" style="margin:20px 0 0 0;padding:0 0;width:20%;display:inline-block;text-align:center;float:left;border-right:1px solid #ffffff1c">
+							<h2 style="margin:0 0 20px 0;padding:0;color:white;font-size:1rem">item1</h2>
+							<h2 style="margin:0 0 20px 0;padding:0;color:white;font-size:1rem">item2</h2>
+							<h2 style="margin:0 0 20px 0;padding:0;color:white;font-size:1rem">item3</h2>
+						</div>		 
+
+
+						<div  id="rightdiv" style="width:77%;height:75%;float:right;margin:0;padding:0;overflow:auto">
+								
+							<form style="width:100%;height:100%;margin:0;padding:0;color:white;text-transform:capitalize;display:inline-block"> 
+								  
+								<div style="display:flex;justify-content:space-around;"> 
+								  <label>first item:</label><input type="text" placeholder="Enter Fitem"></input>
+								  <label>Second item:</label><input type="text" placeholder=""></input>
+						        </div>
+						  
+							  <div style="display:flex;justify-content:space-around;"> 
+								  <label>first item:</label><input type="text" placeholder=""></input>
+								  <label>Second item:</label><input type="text" placeholder=""></input>
+							  </div>
+							  
+						  
+							  <div style="display:flex;justify-content:space-around;"> 
+								  <label>first item:</label><input type="text" placeholder=""></input>
+								  <label>Second item:</label><input type="text" placeholder=""></input>
+							  </div>
+							  
+							  
+							  <div style="display:flex;justify-content:space-around;"> 
+								  <label>first item:</label><input type="text" placeholder=""></input>
+								  <label>Second item:</label><input type="text" placeholder=""></input>
+							  </div>
+						  
+						  
+							  <div style="display:flex;justify-content:space-around;"> 
+								  <label>first item:</label><input type="text" placeholder=""></input>
+								  <label>Second item:</label><input type="text" placeholder=""></input>
+							  </div>
+							  
+							  
+							  <div style="display:flex;justify-content:space-around;"> 
+								  <label>first item:</label><input type="text" placeholder=""></input>
+								  <label>Second item:</label><input type="text" placeholder=""></input>
+							  </div>
+							  
+							  
+							  <div style="display:flex;justify-content:space-around;"> 
+								  <label>first item:</label><input type="text" placeholder=""></input>
+								  <label>Second item:</label><input type="text" placeholder=""></input>
+							  </div>
+									  
+							 <div style="display:flex; justify-content:space-around;align-items:center"> 
+								<label>Massage:</label> <textarea style="background-color:#ffffff1c;border:1px solid #FFD523;border-radius:10px" name="message" rows="5" cols="82" placeholder="Your Massage"> </textarea>
+							 </div>
+							
+								
+							<center> 
+							  <div id="submitt">
+								<input type="submit" value="Send" ></input>
+							  </div>
+							</center>
+										
+								 </form>
+						</div> <!--scroll-->
+				</div> <!--body-->
+
+
+		</div> <!--contentt>
+	</div> <!--modal-->
+  
+		 
+
+</body>
+</html>	
